@@ -1,13 +1,13 @@
 {% set name = "dynamo-pandas" %}
-{% set version = "1.3.0" %}
+{% set version = "1.4.1" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/dynamo-pandas-{{ version }}.tar.gz
-  sha256: d24d30712d2ba853885cbe40dfea45dbba93231dc08eb309cff4a2b919ec7ac8
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name | replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: b381493bf36527c6b7fd7efd883b89efd5b14f60f6097fb652217eac28451256
 
 build:
   noarch: python
